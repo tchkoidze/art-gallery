@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  /*display: flex;
+  justify-content: center;*/
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+main {
+  max-width: 37.5rem;
+}
+
+.header-img-box img {
+  display: block;
+}
+
+.header-text-box {
+  padding: 32px 16px 0 16px;
+}
+
+.header-text-box h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+.header-text-box p {
+  margin: 3.2rem 0;
+  color: #444444;
+}
+.location-btn {
+  display: flex;
+  text-decoration: none;
+}
+
+.location-btn span {
+  background-color: #151515;
+  padding: 24px 35px 24px 32px;
+  font-family: "Big Shoulders Display";
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  letter-spacing: 3.4px;
+}
+.location-btn img {
+  background-color: #d5966c;
+  padding: 24px 23px;
+}
+
+/* second section*/
+.gallery-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 12rem 1.6rem;
+}
+.day-in-gallery {
+  margin: 9px 0 16px 0;
+}
+.day-in-gallery p {
+  margin-top: 2.1rem;
+}
+.inspired {
+  background-color: #151515;
+  padding: 4.8rem 2.4rem;
+  color: #ffffff;
+}
+
+.inspired p {
+  margin-top: 2.4rem;
+}
+
+/*footer*/
+footer {
+  padding: 4.8rem 3.2rem;
+  background-color: #151515;
+}
+footer p {
+  margin: 3.8rem 0;
+  color: #ffffff;
+}
+.footer-socials {
+  display: flex;
+  gap: 2rem;
+}
