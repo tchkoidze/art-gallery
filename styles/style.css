@@ -50,6 +50,7 @@ main {
 .location-btn {
   display: flex;
   text-decoration: none;
+  color: #ffffff;
 }
 
 .location-btn span {
@@ -68,6 +69,14 @@ main {
   padding: 24px 23px;
 }
 
+.location-btn:hover span,
+.location-btn:active span {
+  background: #d5966c;
+}
+.location-btn:hover img,
+.location-btn:active img {
+  background-color: #151515;
+}
 /* second section*/
 .gallery-section {
   display: flex;
