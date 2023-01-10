@@ -15,6 +15,24 @@ body {
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 2.8rem;
+  color: #444444;
+}
+
+.header-img-black-box {
+  display: none;
+}
+
+.header-img-tablet {
+  display: none;
+}
+
+.tablet-img {
+  max-width: 100%;
+  display: none;
+}
+
+.desktop-img {
+  display: none;
 }
 
 h2 {
@@ -23,13 +41,18 @@ h2 {
   font-size: 50px;
   line-height: 45px;
   text-transform: uppercase;
+  color: #151515;
 }
 
 main {
-  max-width: 37.5rem;
+  /*max-width: 37.5rem;*/
 }
 
-.header-img-box img {
+.header-section {
+  height: 100vh;
+}
+
+.header-img-mobile {
   display: block;
 }
 
@@ -42,6 +65,7 @@ main {
   font-weight: 900;
   font-size: 6rem;
   line-height: 5.5rem;
+  color: #151515;
 }
 .header-text-box p {
   margin: 3.2rem 0;
@@ -96,6 +120,10 @@ main {
   color: #ffffff;
 }
 
+.inspired h2 {
+  color: #ffffff;
+}
+
 .inspired p {
   margin-top: 2.4rem;
 }
@@ -112,4 +140,175 @@ footer p {
 .footer-socials {
   display: flex;
   gap: 2rem;
+}
+
+/*responsive design for tablet*/
+@media (min-width: 48em) {
+  .header-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header-img-tablet {
+    display: block;
+  }
+  .header-img-mobile {
+    display: none;
+  }
+  .header-text-box {
+    position: absolute;
+    left: 48.5%;
+    top: 16%;
+  }
+
+  .header-text-box h1 {
+    font-size: 7rem;
+    line-height: 6.5rem;
+  }
+
+  .header-text-box p {
+    max-width: 33.9rem;
+    margin: 4.8rem 0;
+  }
+  .gallery-section {
+    padding: 12rem 4rem;
+  }
+  .grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1.784fr;
+    gap: 6.7rem;
+  }
+  .grid-1 .tablet-img {
+    grid-column: 2;
+  }
+  .day-in-gallery {
+    grid-row: 1;
+    margin: 3.6rem 0 0 0;
+  }
+  .day-in-gallery p {
+    margin-top: 2.4rem;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1.4179fr 1fr;
+    grid-template-rows: 1fr 1.265fr;
+    gap: 1.1rem;
+  }
+
+  .x {
+    grid-row: 1/3;
+  }
+
+  .inspired {
+    grid-column: 2;
+    padding: 8.5rem 2.8rem 8.5rem 2.9rem;
+  }
+  .mobile-img {
+    display: none;
+  }
+  .tablet-img {
+    display: block;
+  }
+  footer {
+    display: flex;
+    padding: 5.6rem 4rem 5.6rem 3.9rem;
+  }
+  footer p {
+    margin: 0 13.3rem 0 6.5rem;
+  }
+}
+
+/*responsive design for dekstop*/
+@media (min-width: 90em) {
+  body {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .header-section {
+    height: 80rem;
+    grid-template-columns: 2fr 1fr;
+  }
+  .header-img-black-box {
+    display: block;
+    position: relative;
+  }
+  .back {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background: black url(../assets/desktop/image-hero.jpg) right;
+
+    background-repeat: no-repeat;
+  }
+
+  .front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(270deg, black 54rem, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .front h1 {
+    font-family: "Big Shoulders Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 88px;
+    text-transform: uppercase;
+    margin-top: 19%;
+    margin-left: 13.6%;
+  }
+  .header-img-box {
+    display: none;
+  }
+  .header-text-box {
+    top: 18%;
+    left: 61%;
+  }
+  .header-text-box h1 {
+    display: none;
+  }
+  .header-text-box p {
+    margin: 0 0 6.4rem 0;
+  }
+  /*section 2 =gallery section*/
+  .gallery-section {
+    padding: 18rem 16.4rem 18rem 16.5rem;
+    gap: 3.2rem;
+  }
+
+  .grid-1 {
+    gap: 12rem;
+  }
+  .tablet-img {
+    display: none;
+  }
+  .desktop-img {
+    display: block;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .img2 {
+    grid-row: 1/3;
+  }
+  /*footer*/
+  footer {
+    padding: 8rem 16.5rem;
+  }
+  .footer-logo img {
+    min-width: 15.9rem;
+  }
+  footer p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 28rem 0 14.4rem;
+  }
 }
