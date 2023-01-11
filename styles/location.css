@@ -30,7 +30,8 @@ body {
 }
 
 .location-btn span {
-  background-color: #151515;
+  background-color: #d5966c;
+
   padding: 24px 35px 24px 32px;
   font-family: "Big Shoulders Display";
   font-weight: 800;
@@ -40,8 +41,19 @@ body {
 }
 
 .location-btn img {
-  background-color: #d5966c;
+  background-color: #151515;
   padding: 24px 23px;
+}
+
+.location-btn:hover span,
+.location-btn:active span {
+  background-color: #151515;
+  transition: 0.5s;
+}
+.location-btn:hover img,
+.location-btn:active img {
+  background: #d5966c;
+  transition: 0.5s;
 }
 
 .addres-txt-box {
@@ -96,6 +108,12 @@ h3 {
   text-decoration: none;
 }
 
+.social-link:hover .facebook,
+.social-link:hover .instagram,
+.social-link:hover .twitter {
+  fill: #ffffff;
+  transition: 0.5s;
+}
 .facebook,
 .instagram,
 .twitter {
