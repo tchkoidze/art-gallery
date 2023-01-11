@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.location-img-box {
+  height: 550px;
+  background-image: url("../assets/mobile/image-map@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.location-btn {
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.location-btn span {
+  background-color: #151515;
+  padding: 24px 35px 24px 32px;
+  font-family: "Big Shoulders Display";
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 3.4px;
+}
+
+.location-btn img {
+  background-color: #d5966c;
+  padding: 24px 23px;
+}
+
+.addres-txt-box {
+  padding: 4.8rem 1.6rem 5.6rem 1.6rem;
+  background-color: #151515;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 4.5rem;
+  margin-bottom: 4.8rem;
+}
+
+h3 {
+  font-family: "Big Shoulders Display";
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #d5966c;
+}
+
+.addres {
+  margin: 2rem 0;
+}
+
+.contact-info-box {
+  background: #d5966c;
+  padding: 4.8rem 3.2rem;
+}
+
+.contact-info-box p {
+  margin: 3.8rem 0;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.social-media-box {
+  display: flex;
+  gap: 2rem;
+  height: 2rem;
+}
+
+.logo {
+  display: block;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.facebook,
+.instagram,
+.twitter {
+  fill: #151515;
+}
+
+/*responsive design for tablet*/
+@media (min-width: 768px) {
+  .location-img-box {
+    height: 600px;
+    background-image: url("../assets/tablet/image-map@2x.png");
+  }
+  .location-btn {
+    margin-left: 3.9rem;
+  }
+
+  .addres-txt-box {
+    display: flex;
+    justify-content: center;
+    gap: 6.8rem;
+    padding: 8.8rem 4rem 8rem 3.9rem;
+  }
+
+  h2 {
+    font-size: 55px;
+    line-height: 50px;
+  }
+
+  .contact-info-box {
+    display: flex;
+    justify-content: center;
+    padding: 5.6rem 4rem 5.6rem 3.9rem;
+  }
+  .logo {
+    width: 11.05rem;
+    height: 4rem;
+  }
+  .contact-info-box p {
+    margin: 0 13.3rem 0 6.45rem;
+  }
+}
+
+/*responsive design for dekstop*/
+@media (min-width: 1440px) {
+  .location-img-box {
+    background-image: url("../assets/desktop/image-map@2x.png");
+  }
+  .location-btn {
+    margin-left: 15.6rem;
+  }
+
+  .addres-txt-box {
+    gap: 22rem;
+    padding: 10.4rem 16.5rem 12.8rem 16.5rem;
+  }
+
+  h2 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  h3 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .addres-txt-box p {
+    width: 54rem;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .addres {
+    margin: 2.4rem 0 3.2rem 0;
+  }
+  .contact-info-box {
+    padding: 8rem 16.5rem;
+  }
+
+  .logo {
+    width: 15.9rem;
+    height: 5.8rem;
+  }
+  .contact-info-box p {
+    margin: 0 28rem 0 14.4rem;
+    height: 8.4rem;
+  }
+}
